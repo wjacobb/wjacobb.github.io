@@ -11,6 +11,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="announce announcement">
+            <!-- Conditional Announcement goes here -->
+        </div>
         <header>
             <img class="logo" src="https://cdn2.iconfinder.com/data/icons/web-development-and-studio/512/29_planet_space_moon_flag_mars_space-512.png" alt="planet picture" height="70">
             <div class="motto">
@@ -22,7 +25,7 @@
             <ul class="burger responsive">
                 <li><h3><a href="#" onclick="toggleMenu()">&#9776; Menu</a></h3></li>
                 <li><h3><a href="#">Home</a></h3></li>
-                <li><h3><a href="#">Preston</a></h3></li>
+                <li id="preston-link"><h3><a href="#">Preston</a></h3></li>
                 <li><h3><a href="#">Soda Springs</a></h3></li>
                 <li><h3><a href="#">Fish Haven</a></h3></li>
                 <li><h3><a href="#">Storm Center</a></h3></li>
@@ -31,16 +34,70 @@
         </nav>
         <main>
             <h2>Preston Idaho</h2>
-            <div class="content-box">Hero w/ weather summary</div>
-            <div class="content-box">5 Day forecast</div>
-            <div class="content-box">Article</div>
-            <div class="content-box">Contact Information</div>
+            <div id="weather-box">
+                <img class="hero-image" src="https://wikitravel.org/upload/shared/2/24/Los_Nevados_National_Park_Col._banner.jpg" alt="nature image">
+                <div id="current-weather" class="content-box">
+                    <p><strong>Weather Summary</strong></p>
+                    <hr/>
+                    <p>Currently: <span><strong>76°F</strong></span></p>
+                    <p>High: <span><strong>82°F</strong></span></p>
+                    <p>Wind Chill: <span><strong>2°F</strong></span></p>
+                    <p>Humidity: <span><strong>78%</strong></span></p>
+                    <p>Wind Speed: <span><strong>3 MPH</strong></span></p>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2>5 Day Forecast</h2>
+                <table>
+                    <tr>
+                        <th id="dayOfWeek"></th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                        <!-- <th id="dayOfWeek2"></th>
+                        <th id="dayOfWeek3"></th>
+                        <th id="dayOfWeek4"></th>
+                        <th id="dayOfWeek5"></th> -->
+                    </tr>
+                    <tr>
+                        <td>78°F</td>
+                        <td>75°F</td>
+                        <td>76°F</td>
+                        <td>77°F</td>
+                        <td>80°F</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="article-box" class="content-box">
+                <h3>July 4th Celebration!!!</h3>
+                <img id="fireworks" src="http://2.bp.blogspot.com/-eJ64nMENanM/UJzIdJG7lLI/AAAAAAAAI-o/sAk0us0vP0E/w1200-h630-p-k-no-nu/Fireworks1-1024x819.jpg" alt="fireworks" height="300">
+                <p>By: Chris P. Bacon</p>
+                <hr/>
+                <p>With the 4th of July coming up soon there will be lots of people gathering. Stay safe while out late and make sure that your area permits fireworks/firecrackers prior to purchasing them.</p>
+            </div>
+            <div id="contact-box" class="content-box">
+                <img class="preston responsive" src="images/preston_ID.JPG" alt="Preston, ID">
+                <div class="contact-info">
+                    <p><strong>Relevant Weather</strong></p>
+                    <p>999 Main St.</p>
+                    <p>Preston, Id 123456</p>
+                    <div id="phone-info">
+                        <!-- <img src="https://cdn3.iconfinder.com/data/icons/smoothfill-device/30/device_001-smartphone-phone-mobile-cellphone-tel-iphone-512.png" alt="phone" height="16"> -->
+                        <p>(999)-999-9999</p>
+                    </div>
+                    <div id="mail-info">
+                        <!-- <img src="https://cdn0.iconfinder.com/data/icons/business-953/42/mail-512.png" alt="mail" height="16"> -->
+                        <p>relevant_weather@rw.com</p>
+                    </div>
+                </div>
+                
+            </div>
         </main>
         <footer>
             <div>&copy;Relevant Weather | Attributions | Jacob Williams</div>
-            <div>Saturday, 18 June 2022</div>
+            <div><span id="dayOfWeek"></span>, <span id="day"></span> June 2022</div>
         </footer>
         <script id="toggleMenu" src="JS/toggleMenu.js"></script>
     </body>
 </html>
-<!-- Small and Large breakpoints -->
