@@ -86,8 +86,11 @@ footer{
     color: white;
 }
 .hero-image{
-    max-height: 300px;
-    max-width: 100%;
+    display: flex;
+    justify-items: center;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
 }
 #current-weather{
     max-width: 200px;
@@ -140,6 +143,60 @@ td, th{
     text-align: center;
     padding: 5px;
 }
+.her0-box{
+    display: relative;
+}
+.hero-small{
+    color: yellow;
+    display:block;
+    position: absolute;
+    top: 0%;
+    right: 20%;
+}
+.hero-medium{
+    display: none;
+}
+.hero-large{
+    display: none;
+}
+@media only screen and (min-width: 520px) {
+    .burger{
+        display: flex;
+    }
+    .burger li:first-child{
+        display: none;
+    }
+    .burger li{
+        display: block;
+        flex: 1 1 100%;
+    }
+    .burger li a{
+        color: #061A40;
+    }
+    #current-weather{
+        line-height: 6px;
+    }
+    .hero-image{
+        display: flex;
+        justify-items: center;
+        max-width: 450px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .hero-small{
+        display: none;
+    }
+    .hero-medium{
+        color: yellow;
+        display:block;
+        position: absolute;
+        top: 10%;
+        right: 20%;
+    }
+    .hero-large{
+        display: none;
+    }
+}
 @media only screen and (min-width: 800px) {
     .burger{
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -157,22 +214,24 @@ td, th{
     .forecast{
         display: block;
     }
-}
-@media only screen and (min-width: 32.5em) {
-    .burger{
+    .hero-image{
         display: flex;
+        justify-items: center;
+        max-width: 750px;
+        height: auto;
+        margin: 0 auto;
     }
-    .burger li:first-child{
+    .hero-small{
+        display: none;
+    };
+    .hero-medium{
         display: none;
     }
-    .burger li{
-        display: block;
-        flex: 1 1 100%;
-    }
-    .burger li a{
-        color: #061A40;
-    }
-    #current-weather{
-        line-height: 6px;
+    .hero-large{
+        color: yellow;
+        display:block;
+        position: absolute;
+        top: 20%;
+        right: 20%;
     }
 }

@@ -35,13 +35,18 @@
         <main>
             <h2>Preston Idaho</h2>
             <div id="weather-box">
-                <img class="hero-image" src="https://wikitravel.org/upload/shared/2/24/Los_Nevados_National_Park_Col._banner.jpg" alt="nature image">
+                <div class="hero-box">
+                    <img class="hero-image" src="images/wdd230_image_franklinOriginal.jpeg" alt="nature image" height="750">
+                    <p class="hero-small responsive">Small</p>
+                    <p class="hero-medium responsive">Medium</p>
+                    <p class="hero-large responsive">Large</p>
+                </div>
                 <div id="current-weather" class="content-box">
                     <p><strong>Weather Summary</strong></p>
                     <hr/>
                     <p>Currently: <span><strong>76°F</strong></span></p>
                     <p>High: <span><strong>82°F</strong></span></p>
-                    <p>Wind Chill: <span><strong>2°F</strong></span></p>
+                    <p>Wind Chill: <span><strong id="chill">3°F</strong></span></p>
                     <p>Humidity: <span><strong>78%</strong></span></p>
                     <p>Wind Speed: <span><strong>3 MPH</strong></span></p>
                 </div>
@@ -99,5 +104,6 @@
             <div><span id="dayOfWeek"></span>, <span id="day"></span> June 2022</div>
         </footer>
         <script id="toggleMenu" src="JS/toggleMenu.js"></script>
+        <script id="windchill" src="JS/windchill.js"></script>
     </body>
 </html>
