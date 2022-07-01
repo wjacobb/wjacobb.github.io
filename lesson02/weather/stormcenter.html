@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="This webpage contains the contents for Jacob Williams, a student at BYU-I, and his assignments for WDD 230">
+        <title>Storm Center</title>
+        <link rel="stylesheet" href="CSS/stormcenter.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/web-development-and-studio/512/29_planet_space_moon_flag_mars_space-512.png" alt="planet picture" height="70">
+            <div class="motto">
+                <div><h2>Relevant Weather</h2></div>
+                <div>Make it a great day, or not. The choice is <em>always</em> yours.</div>
+            </div>
+        </header>
+        <nav>
+            <ul class="burger responsive">
+                <li><h3><a href="#" onclick="toggleMenu()">&#9776; Menu</a></h3></li>
+                <li><h3><a href="#">Home</a></h3></li>
+                <li><h3><a href="#">Preston</a></h3></li>
+                <li><h3><a href="#">Soda Springs</a></h3></li>
+                <li><h3><a href="#">Fish Haven</a></h3></li>
+                <li id="storm-link"><h3><a href="#">Storm Center</a></h3></li>
+                <li><h3><a href="gallery-7.html">Gallery</a></h3></li>
+            </ul>
+        </nav>
+        <main>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <div class="personal-details">
+                        <label>Full Name* <input type="text" name="fname" required minlength="5"></label>
+                        <label>Phone* <input type="tel" name="phone" placeholder="12355512345" required></label>
+                        <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label>Zip code* <input type="zip" name="zip" placeholder="123456" required></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Weather Details</legend>
+                    <div class="weather-details">
+                        <label>Storm Date <input type="date" name="completeDate"></label>
+                        <label>Storm Type
+                            <select name="subject">
+                                <option value="">Please Select</option>
+                                <option value="flood">Flash Flood</option>
+                                <option value="hail">Hail</option>
+                                <option value="hurricane">Hurricane</option>
+                                <option value="thunderstorm">Thunderstorm</option>
+                                <option value="tornado">Tornado</option>
+                            </select>
+                        </label>
+                        <label class="flexly" for="rating">Severity: &nbsp;&nbsp;&nbsp;
+                            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span>
+                        </label>
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                        <script>function adjustRating(rating) {
+                            document.getElementById("ratingvalue").innerHTML = rating;
+                        }</script>
+                        <label>Region
+                            <select name="subject">
+                                <option value="" disabled>Please Select</option>
+                                <option value="flood">Preston</option>
+                                <option value="hail">Soda Springs</option>
+                                <option value="hurricane">Fish Haven</option>
+                            </select>
+                        </label>
+                        <div>In-Danger?</div>
+                        <label><input type="radio" name="audience" value="yes">Yes</label>
+                        <label><input type="radio" name="audience" value="no">No</label>
+                        <label><input type="radio" name="audience" value="maybe">Maybe</label>
+                    </div>
+                </fieldset>
+                <input class="button" type="submit" value="Submit Details">
+            </form>
+        </main>
+        <footer>
+            <div>&copy;Relevant Weather | Attributions | Jacob Williams</div>
+            <div><span id="dayOfWeek"></span>, <span id="day"></span> June 2022</div>
+        </footer>
+        <script id="toggleMenu" src="JS/toggleMenu.js"></script>
+    </body>
+</html>

@@ -76,29 +76,30 @@ footer{
 .burger a:hover{
     color: white;
 }
-#gallery-link{
-    text-decoration: underline;
-}
-#contact-box{
-    display: flex;
-    line-height: 4px;
-}
-.contact-info{
-    padding: 10px;
-}
-.picture-card{
-    max-width: 300px;
-    margin-bottom: 8px;
-    border: #061A40 ;
-}
-.pic-description{
-    line-height: 0px;
-    padding-bottom: 7px;
-    padding-left: 3px;
-}
-.gallery-boxes{
+.personal-details{
     display: grid;
     grid-template-columns: 1fr;
+}
+.personal-details label{
+    margin: 5px;
+}
+.weather-details{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.weather-details label{
+    margin: 5px;
+}
+.button{
+    margin: 5px;
+    background-color: #061A40;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    cursor: pointer;
 }
 @media only screen and (min-width: 520px) {
     .burger{
@@ -114,26 +115,24 @@ footer{
     .burger li a{
         color: #061A40;
     }
-    .gallery-boxes{
+    .personal-details{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .personal-details label{
+        margin: 5px;
+    }
+    .weather-details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .weather-details label{
+        margin: 5px;
     }
 }
 @media only screen and (min-width: 800px) {
     .burger{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 16px;
-    }
-    #contact-box{
-        line-height: 7px;
-    }
-    .gallery-boxes{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .picture-card:hover{
-        max-width: 300px;
-        box-shadow: 4px 3px 8px 1px #888888;
-        margin-bottom: 8px;
     }
 }
