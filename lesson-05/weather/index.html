@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="This webpage contains the contents for Jacob Williams, a student at BYU-I, and his assignments for WDD 230">
+        <title>Relevant Weather</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/home.css">
+    </head>    
+    <body>
+        <header>
+            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/web-development-and-studio/512/29_planet_space_moon_flag_mars_space-512.png" alt="planet picture" height="70">
+            <div class="motto">
+                <div><h2>Relevant Weather</h2></div>
+                <div>Make it a great day, or not. The choice is <em>always</em> yours.</div>
+            </div>
+        </header>
+        <nav>
+            <ul class="burger responsive">
+                <li><h3><a href="#" onclick="toggleMenu()">&#9776; Menu</a></h3></li>
+                <li id="home-link"><h3><a href="#">Home</a></h3></li>
+                <li id="preston-link"><h3><a href="preston.html">Preston</a></h3></li>
+                <li><h3><a href="#">Soda Springs</a></h3></li>
+                <li><h3><a href="#">Fish Haven</a></h3></li>
+                <li><h3><a href="#">Storm Center</a></h3></li>
+                <li id="gallery-link"><h3><a href="#">Gallery</a></h3></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- <p>Hello there</p><p id="cards"></p> -->
+            <div class="card">
+                <div>
+                    <h2 id="name1"></h2>
+                    <p id="motto1"></p>
+                    <p>Year Founded: <span id="year1"></span></p>
+                    <p>Population: <span id="population1"></span></p>
+                    <p>Annual Rain Fall: <span id="rain1"></span></p>
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/858115/pexels-photo-858115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="snowy pic" height="200">
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h2 id="name2"></h2>
+                    <p id="motto2"></p>
+                    <p>Year Founded: <span id="year2"></span></p>
+                    <p>Population: <span id="population2"></span></p>
+                    <p>Annual Rain Fall: <span id="rain2"></span></p>
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/12527037/pexels-photo-12527037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="clear morning" height="200">
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h2 id="name3"></h2>
+                    <p id="motto3"></p>
+                    <p>Year Founded: <span id="year3"></span></p>
+                    <p>Population: <span id="population3"></span></p>
+                    <p>Annual Rain Fall: <span id="rain3"></span></p>
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/12527029/pexels-photo-12527029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="cloudy skies" height="200">
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h2 id="name4"></h2>
+                    <p id="motto4"></p>
+                    <p>Year Founded: <span id="year4"></span></p>
+                    <p>Population: <span id="population4"></span></p>
+                    <p>Annual Rain Fall: <span id="rain4"></span></p>
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/12527041/pexels-photo-12527041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="warming up" height="200">
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h2 id="name5"></h2>
+                    <p id="motto5"></p>
+                    <p>Year Founded: <span id="year5"></span></p>
+                    <p>Population: <span id="population5"></span></p>
+                    <p>Annual Rain Fall: <span id="rain5"></span></p>
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/12527027/pexels-photo-12527027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="heavy rain clouds" height="200">
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h2 id="name6"></h2>
+                    <p id="motto6"></p>
+                    <p>Year Founded: <span id="year6"></span></p>
+                    <p>Population: <span id="population6"></span></p>
+                    <p>Annual Rain Fall: <span id="rain6"></span></p>
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/12366059/pexels-photo-12366059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foggy weather" height="200">
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h2 id="name7"></h2>
+                    <p id="motto7"></p>
+                    <p>Year Founded: <span id="year7"></span></p>
+                    <p>Population: <span id="population7"></span></p>
+                    <p>Annual Rain Fall: <span id="rain7"></span></p>
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/12365972/pexels-photo-12365972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="slight drizzle" height="200">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>&copy;Relevant Weather | Attributions | Jacob Williams</div>
+            <!-- <div><span id="dayOfWeek"></span>, <span id="day"></span> June 2022</div> -->
+            <a href="index.html">Home</a>
+            <a href="target-audience.html">Target Audience</a>
+            <a href="color-scheme.html">Color Scheme</a>
+            <a href="typography.html">Typography</a>
+            <a href="preston.html">Preston Page</a>
+        </footer>
+        <script id="card" src="JS/cards.js"></script>
+    </body>
+</html>
