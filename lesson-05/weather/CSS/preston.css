@@ -95,7 +95,7 @@ footer{
 #current-weather{
     max-width: 200px;
     position: absolute;
-    top: -25%;
+    top: -15%;
     left: 10%;
     background: radial-gradient(#eee, #6B7FD7);
     border: 1px solid #000;
