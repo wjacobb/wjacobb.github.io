@@ -1,0 +1,237 @@
+.logo{ 
+    margin-top: 10px;
+    color: white;
+    background-color: white;
+    border-radius: 25%;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #061A40;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.motto{
+    padding-left: 25px;
+}
+.content-box{
+    background-color: #BBCBCB;
+    margin:5px;
+    padding: 5px;
+    border-radius: 3px;
+}
+main h2{
+    display: flex;
+    justify-content: center;
+}
+main{
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color:#061A40;
+}
+footer{
+    background: #6B7FD7;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.burger{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    background-color: #BBCBCB;
+    margin-top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+.forecast{
+    display: none;
+}
+.announce{
+    display: hidden;
+}
+.announcement{
+    display: block;
+}
+.burger li:first-child{
+    display: block;
+}
+.burger li {
+    display: none;
+}
+.burger li:active{
+    text-decoration: underline;
+}
+.burger a{
+    color: #061A40;
+    text-align: center;
+    text-decoration: none;
+}
+.responsive li{
+    display: block;
+}
+.burger li:hover{
+    cursor: pointer;
+}
+.burger a:hover{
+    color: white;
+}
+.hero-image{
+    display: flex;
+    justify-items: center;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+}
+#current-weather{
+    max-width: 200px;
+    position: absolute;
+    top: -15%;
+    left: 10%;
+    background: radial-gradient(#eee, #6B7FD7);
+    border: 1px solid #000;
+    box-shadow: 0 0 30px #333;
+    line-height: 2px;
+}
+#weather-box{
+    margin: 10px auto;
+    position: relative;
+}
+#fireworks{
+    width: 75%;
+    height: auto;
+    max-height: 300px;
+    display: flex;
+    justify-items: center;
+}
+#article-box h3{
+    display: flex;
+    justify-content: center;
+}
+#article-box img{
+    margin: 0 auto;
+}
+#preston-link{
+    text-decoration: underline;
+}
+#contact-box{
+    display: flex;
+    line-height: 4px;
+}
+.contact-info{
+    padding: 10px;
+}
+.preston{
+    display: none;
+    max-width: 50%;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+}
+.hero-box{
+    display: relative;
+}
+.hero-small{
+    color: yellow;
+    display:block;
+    position: absolute;
+    top: 0%;
+    right: 20%;
+}
+.hero-medium{
+    display: none;
+}
+.hero-large{
+    display: none;
+}
+@media only screen and (min-width: 520px) {
+    .burger{
+        display: flex;
+    }
+    .burger li:first-child{
+        display: none;
+    }
+    .burger li{
+        display: block;
+        flex: 1 1 100%;
+    }
+    .burger li a{
+        color: #061A40;
+    }
+    #current-weather{
+        line-height: 6px;
+    }
+    .hero-image{
+        display: flex;
+        justify-items: center;
+        max-width: 450px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .hero-small{
+        display: none;
+    }
+    .hero-medium{
+        color: yellow;
+        display:block;
+        position: absolute;
+        top: 10%;
+        right: 20%;
+    }
+    .hero-large{
+        display: none;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .burger{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+    }
+    #contact-box{
+        line-height: 7px;
+    }
+    #current-weather{
+        line-height: 4px;
+    }
+    .preston{
+        display: block;
+    }
+    .forecast{
+        display: block;
+    }
+    .hero-image{
+        display: flex;
+        justify-items: center;
+        max-width: 750px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .hero-small{
+        display: none;
+    };
+    .hero-medium{
+        display: none;
+    }
+    .hero-large{
+        color: yellow;
+        display:block;
+        position: absolute;
+        top: 20%;
+        right: 20%;
+    }
+}

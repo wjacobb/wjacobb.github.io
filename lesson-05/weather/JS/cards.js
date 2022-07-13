@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+//const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 let text = '{"towns":[' +
 '{"name":"Soda Springs","photo": "images/preston.jpg","motto": "Historic Oregon Trail Oasis. The Soda is on Us.","yearFounded": "1858","currentPopulation": "2985","averageRainfall": "15.75","events": ["February 29: Geyser Song Day","May 1-6: Days of May Celebration","October 15-16: Octoberfest"]},' +

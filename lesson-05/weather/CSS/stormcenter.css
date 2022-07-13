@@ -101,6 +101,9 @@ footer{
     border-radius: 3px;
     cursor: pointer;
 }
+#storm-link{
+    text-decoration: underline;
+}
 @media only screen and (min-width: 520px) {
     .burger{
         display: flex;
