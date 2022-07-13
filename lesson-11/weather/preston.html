@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="This webpage contains the contents for Jacob Williams, a student at BYU-I, and his assignments for WDD 230">
+        <title>Preston, Idaho</title>
+        <link rel="stylesheet" href="CSS/preston.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="announce announcement">
+            <!-- Conditional Announcement goes here -->
+        </div>
+        <header>
+            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/web-development-and-studio/512/29_planet_space_moon_flag_mars_space-512.png" alt="planet picture" height="70">
+            <div class="motto">
+                <div><h2>Relevant Weather</h2></div>
+                <div>Make it a great day, or not. The choice is <em>always</em> yours.</div>
+            </div>
+        </header>
+        <nav>
+            <ul class="burger responsive">
+                <li><h3><a href="#" onclick="toggleMenu()">&#9776; Menu</a></h3></li>
+                <li><h3><a href="index.html">Home</a></h3></li>
+                <li id="preston-link"><h3><a href="#">Preston</a></h3></li>
+                <li><h3><a href="soda-springs.html">Soda Springs</a></h3></li>
+                <li><h3><a href="fish-haven.html">Fish Haven</a></h3></li>
+                <li><h3><a href="stormcenter.html">Storm Center</a></h3></li>
+                <li><h3><a href="gallery.html">Gallery</a></h3></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Preston Idaho</h2>
+            <div id="weather-box">
+                <div class="hero-box">
+                    <img class="hero-image" src="https://images.pexels.com/photos/12365972/pexels-photo-12365972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="slight drizzle" height="200">
+                </div>
+                <div id="current-weather" class="content-box">
+                    <p><strong>Weather Summary</strong></p>
+                    <hr/>
+                    <p>Currently: <span><strong>76°F</strong></span></p>
+                    <p>High: <span><strong>82°F</strong></span></p>
+                    <p>Wind Chill: <span><strong id="chill">3°F</strong></span></p>
+                    <p>Humidity: <span><strong>78%</strong></span></p>
+                    <p>Wind Speed: <span><strong>3 MPH</strong></span></p>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2>5 Day Forecast</h2>
+                <table>
+                    <tr>
+                        <th id="dayOfWeek"></th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                    <tr>
+                        <td>78°F</td>
+                        <td>75°F</td>
+                        <td>76°F</td>
+                        <td>77°F</td>
+                        <td>80°F</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="article-box" class="content-box">
+                <h3>Upcoming Events</h3>
+                <hr>
+                <p>March 29: Work Creek Revival</p>
+                <p>July 8-12: Napolean Dynamite Festival</p>
+                <p>November 2-4: Freedom Days</p>
+            </div>
+            <div id="contact-box" class="content-box">
+                <img class="preston responsive" src="images/preston_ID.JPG" alt="Preston, ID">
+                <div class="contact-info">
+                    <p><strong>Relevant Weather</strong></p>
+                    <p>999 Main St.</p>
+                    <p>Preston, Id 123456</p>
+                    <div id="phone-info">
+                        <!-- <img src="https://cdn3.iconfinder.com/data/icons/smoothfill-device/30/device_001-smartphone-phone-mobile-cellphone-tel-iphone-512.png" alt="phone" height="16"> -->
+                        <p>(999)-999-9999</p>
+                    </div>
+                    <div id="mail-info">
+                        <!-- <img src="https://cdn0.iconfinder.com/data/icons/business-953/42/mail-512.png" alt="mail" height="16"> -->
+                        <p>relevant_weather@rw.com</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>&copy;Relevant Weather | Attributions | Jacob Williams</div>
+            <div><span id="dayOfWeek"></span>, <span id="day"></span> June 2022</div>
+        </footer>
+        <script id="toggleMenu" src="JS/toggleMenu.js"></script>
+        <script id="windchill" src="JS/windchill.js"></script>
+        <script id="card" src="JS/cards.js"></script>
+    </body>
+</html>
