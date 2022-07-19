@@ -93,7 +93,13 @@ table{
 #rental-info tr:nth-child(even){
     background-color: #f2f2f2;
 }
-@media only screen and (min-width: 520px) {
+img{
+    max-height: 200px;
+}
+section{
+    margin: 15px;
+}
+@media only screen and (min-width: 630px) {
     .burger{
         display: flex;
     }
@@ -113,6 +119,10 @@ table{
         max-width: 450px;
         height: auto;
         margin: 0 auto;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media only screen and (min-width: 920px) {
@@ -141,5 +151,9 @@ table{
         align-items: center;
         align-items: center;
         background-color: #edae49;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

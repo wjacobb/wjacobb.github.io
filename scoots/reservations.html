@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="CSS/home.css">
+        <link rel="stylesheet" href="CSS/reservations.css">
     </head>    
     <body>
         <header>
@@ -44,19 +44,49 @@
                 </div>
             </div>
             <form method="get" action="thanks.html">
-                <legend>Rental Details</legend>
-                <label>Start Date <input type="date" name="startDate"></label>
-                <label>End Date <input type="date" name="endDate"></label>
-                <label>Rental Option
-                    <select name="subject">
-                        <option value="">Please Select</option>
-                        <option value="metro">Metro Scooter</option>
-                        <option value="dio">Dio Scooter</option>
-                        <option value="PCX150">PCX150 Scooter</option>
-                        <option value="wrangler-4">Wrangler 4-door</option>
-                        <option value="wrangler-2">Wrangler 2-door</option>
-                    </select>
-                </label>
+                <fieldset>
+                    <legend>Rental Details</legend>
+                    <div>
+                        <label>Start Date <input type="date" name="startDate"></label>
+                        <br>
+                        <br>
+                        <label>End Date <input type="date" name="endDate"></label>
+                        <br>
+                        <br>
+                        <label>Rental Option
+                            <select name="subject">
+                                <option value="">Please Select</option>
+                                <option value="metro">Metro Scooter</option>
+                                <option value="dio">Dio Scooter</option>
+                                <option value="PCX150">PCX150 Scooter</option>
+                                <option value="wrangler-4">Wrangler 4-door</option>
+                                <option value="wrangler-2">Wrangler 2-door</option>
+                            </select>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <div>
+                        <label>Full Name* <input type="text" name="fname" required minlength="5"></label>
+                        <br>
+                        <br>
+                        <label>Phone* <input type="tel" name="phone" placeholder="12355512345" required></label>
+                        <br>
+                        <br>
+                        <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <br>
+                        <br>
+                        <label>State/Country* <input type="text" name="nation" required minlength="3"></label>
+                        <br>
+                        <br>
+                        <label>Cruise Line <input type="text" name="cruise"></label>
+                        <br>
+                        <br>
+                        <label>Special Accomedations <input type="text" name="request"></label>
+                    </div>
+                </fieldset>
+                <input class="button" type="submit" value="Submit Details">
             </form>
         </main>
         <footer>

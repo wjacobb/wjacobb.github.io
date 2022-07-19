@@ -48,16 +48,9 @@ main{
     justify-items: center;
     margin: 0 auto;
 }
-.button{
-    margin: 5px;
-    background-color: #294936;
-    color: #edae49;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 3px;
-    cursor: pointer;
+section{
+    background-color: #edae49;
+    padding: 10px;
 }
 @media only screen and (min-width: 520px) {
     .burger{
@@ -78,5 +71,11 @@ main{
     .burger{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 16px;
+    }
+    section{
+        display: flex;
+    }
+    section div{
+        margin: 10px;
     }
 }

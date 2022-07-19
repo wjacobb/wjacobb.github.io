@@ -7,11 +7,11 @@
 //full-walk
 let text = '{"rentals":[' +
 '{"name":"Honda Metro Scooter","capacity": "1","partreserve": "$20","fullreserve": "$30","partwalk": "$25","fullwalk": "$35"},' +
-'{"name":"Honda Metro Scooter","capacity": "2","partreserve": "$30","fullreserve": "$40","partwalk": "$35","fullwalk": "$45"},' +
-'{"name":"Honda Metro Scooter","capacity": "2","partreserve": "$40","fullreserve": "$50","partwalk": "$45","fullwalk": "$55"},' +
-'{"name":"Honda Metro Scooter","capacity": "4","partreserve": "$50","fullreserve": "$70","partwalk": "$60","fullwalk": "$80"},' +
-'{"name":"Honda Metro Scooter","capacity": "5","partreserve": "$70","fullreserve": "$100","partwalk": "$80","fullwalk": "$125"},' +
-'{"name":"Honda Metro Scooter","capacity": "4","partreserve": "$60","fullreserve": "$85","partwalk": "$70","fullwalk": "$90"}]}'
+'{"name":"Honda Dio Scooter","capacity": "2","partreserve": "$30","fullreserve": "$40","partwalk": "$35","fullwalk": "$45"},' +
+'{"name":"Honda PCX150 Scooter","capacity": "2","partreserve": "$40","fullreserve": "$50","partwalk": "$45","fullwalk": "$55"},' +
+'{"name":"Honda Pioneer ATV","capacity": "4","partreserve": "$50","fullreserve": "$70","partwalk": "$60","fullwalk": "$80"},' +
+'{"name":"Jeep Wrangler - 4 door with a/c","capacity": "5","partreserve": "$70","fullreserve": "$100","partwalk": "$80","fullwalk": "$125"},' +
+'{"name":"Jeep Wrangler - 2 door","capacity": "4","partreserve": "$60","fullreserve": "$85","partwalk": "$70","fullwalk": "$90"}]}'
 ;
 
 const obj = JSON.parse(text);

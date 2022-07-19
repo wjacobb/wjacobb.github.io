@@ -104,6 +104,9 @@ table{
     line-height: 2px;
     padding:15px;
 }
+.forecast{
+    display: none;
+}
 @media only screen and (min-width: 520px) {
     .burger{
         display: flex;
@@ -130,9 +133,7 @@ table{
         justify-items: center;
     }
 }
-.forecast{
-    display: none;
-}
+
 @media only screen and (min-width: 920px) {
     .burger{
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -141,7 +142,8 @@ table{
     .hero-image{
         display: flex;
         justify-items: center;
-        max-width: 850px;
+        width: 920px;;
+        max-width: 950px;
         height: auto;
         margin: 0 auto;
     }
