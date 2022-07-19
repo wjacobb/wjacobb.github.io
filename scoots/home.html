@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="This webpage contains the contents for Jacob Williams, a student at BYU-I, and his assignments for WDD 230">
+        <title>Scoots | Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/home.css">
+    </head>    
+    <body>
+        <header>
+            <img src="https://cdn0.iconfinder.com/data/icons/competitive-strategy-and-corporate-training/512/985_Culture_global_india_indian_palm_tree_srilanka_tree_pongal_festival-512.png" height="100">
+            <h2>Welcome to Scoots!</h2>
+        </header>
+        <nav>
+            <ul class="burger responsive">
+                <li><a href="#" onclick="toggleMenu()"><h3>&#9776; Menu</h3></a></h3></li>
+                <li id="current-link"><a href="#"><h3>Home</h3></a></li>
+                <li><a href="rentals.html"><h3>Rentals</h3></a></li>
+                <li><a href="reservations.html"><h3>Reservations</h3></a></li>
+                <li><a href="tours.html"><h3>Tours</h3></a></li>
+                <li><a href="contact.html"><h3>Contact</h3></a></li>
+            </ul>
+        </nav>
+        <main>
+            <img class="hero-image" src="images/beach_banner.jpg" alt="hero-image">
+            <section class="info-section">
+                <div class="info-box">
+                    <div>
+                        <img src="images/tour_one.jpg" alt="tourist attraction" height="200">
+                    </div>
+                    <div>
+                        <p>Welcome to the coast of Cozumel! Here we rent out scooters, ATV's and Jeep's ranging from 1-4 total passengers. We keep our vehicles in good shape to make things as pleasant for you as possible. We hope you enjoy your time in Cozumel as we provide a means of transportation for you as well as others.</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div>
+                        <p>We have locations in both near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel and the other is near the Terminal Peurta Maya. We cater to locals, walk-in tourists, enthusiasts, and cruises.</p>
+                    </div>
+                    <div>
+                        <img src="images/tour_two.jpg" alt="tourist attraction" height="200" width="98%">
+                    </div>
+                </div>
+            </section>
+            <table id="rental-info">
+                <tr>
+                    <th style="text-align: center;" colspan="6">Max Persons and Price Chart (includes Tax)</th>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td style="text-align: center;" colspan="2">Reservation</td>
+                    <td style="text-align: center;" colspan="2">Walk-In</td> 
+                </tr>
+                <tr>
+                    <td>Rental Type</td>
+                    <td>Max Persons</td>
+                    <td>Half Day (3 hrs)</td>
+                    <td>Full Day</td>
+                    <td>Half Day (3 hrs)</td>
+                    <td>Full Day</td>
+                </tr>
+                <tr>
+                    <td><p id="name1"></p></td>
+                    <td><p id="capacity1"></p></td>
+                    <td><p id="partreserve1"></p></td>
+                    <td><p id="fullreserve1"></p></td>
+                    <td><p id="partwalk1"></p></td>
+                    <td><p id="fullwalk1"></p></td>
+                </tr>
+                <tr>
+                    <td><p id="name2"></p></td>
+                    <td><p id="capacity2"></p></td>
+                    <td><p id="partreserve2"></p></td>
+                    <td><p id="fullreserve2"></p></td>
+                    <td><p id="partwalk2"></p></td>
+                    <td><p id="fullwalk2"></p></td>
+                </tr>
+                <tr>
+                    <td><p id="name3"></p></td>
+                    <td><p id="capacity3"></p></td>
+                    <td><p id="partreserve3"></p></td>
+                    <td><p id="fullreserve3"></p></td>
+                    <td><p id="partwalk3"></p></td>
+                    <td><p id="fullwalk3"></p></td>
+                </tr>
+                <tr>
+                    <td><p id="name4"></p></td>
+                    <td><p id="capacity4"></p></td>
+                    <td><p id="partreserve4"></p></td>
+                    <td><p id="fullreserve4"></p></td>
+                    <td><p id="partwalk4"></p></td>
+                    <td><p id="fullwalk4"></p></td>
+                </tr>
+                <tr>
+                    <td><p id="name5"></p></td>
+                    <td><p id="capacity5"></p></td>
+                    <td><p id="partreserve5"></p></td>
+                    <td><p id="fullreserve5"></p></td>
+                    <td><p id="partwalk5"></p></td>
+                    <td><p id="fullwalk5"></p></td>
+                </tr>
+                <tr>
+                    <td><p id="name6"></p></td>
+                    <td><p id="capacity6"></p></td>
+                    <td><p id="partreserve6"></p></td>
+                    <td><p id="fullreserve6"></p></td>
+                    <td><p id="partwalk6"></p></td>
+                    <td><p id="fullwalk6"></p></td>
+                </tr>
+            </table>
+            <div id="weather-box">
+                <div id="current-weather" class="content-box">
+                    <p><strong>Weather Summary</strong></p>
+                    <hr/>
+                    <p>Currently: <span><strong>95°F</strong></span></p>
+                    <p>High: <span><strong>96°F</strong></span></p>
+                    <p>Wind Chill: <span><strong id="chill">°F</strong></span></p>
+                    <p>Humidity: <span><strong>96%</strong></span></p>
+                    <p>Wind Speed: <span><strong>2 MPH</strong></span></p>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2>5 Day Forecast</h2>
+                <table>
+                    <tr>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                    <tr>
+                        <td>96°F</td>
+                        <td>98°F</td>
+                        <td>101°F</td>
+                        <td>99°F</td>
+                        <td>98°F</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <div>&copy;Scoots | Jacob Williams 2022</div>
+        </footer>
+        <script src="js/rentals.js"></script>
+        <script src="js/toggleMenu.js"></script>
+        <script id="windchill" src="JS/windchill.js"></script>
+    </body>
+</html>

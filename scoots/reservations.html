@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="This webpage contains the contents for Jacob Williams, a student at BYU-I, and his assignments for WDD 230">
+        <title>Scoots | Reservations</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/home.css">
+    </head>    
+    <body>
+        <header>
+            <img src="https://cdn0.iconfinder.com/data/icons/competitive-strategy-and-corporate-training/512/985_Culture_global_india_indian_palm_tree_srilanka_tree_pongal_festival-512.png" height="100">
+            <h2>Reservations</h2>
+        </header>
+        <nav>
+            <ul class="burger responsive">
+                <li><a href="home.html" onclick="toggleMenu()"><h3>&#9776; Menu</h3></a></h3></li>
+                <li><a href="home.html"><h3>Home</h3></a></li>
+                <li><a href="rentals.html"><h3>Rentals</h3></a></li>
+                <li id="current-link"><a href="#"><h3>Reservations</h3></a></li>
+                <li><a href="tours.html"><h3>Tours</h3></a></li>
+                <li><a href="contact.html"><h3>Contact</h3></a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="agreement">
+                <h2>Agreement Policy</h2>
+                <div class="policy">
+                    <ul>
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid drivers license is required in hand at time of rental.</li>
+                        <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                        <li>Fuel charge not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is free of charge.</li>
+                        <li>Reservations rate requires 24 hour prior notification.</li>
+                        <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                        <li>Rentals may be returned to either location.</li>
+                    </ul>
+                </div>
+            </div>
+            <form method="get" action="thanks.html">
+                <legend>Rental Details</legend>
+                <label>Start Date <input type="date" name="startDate"></label>
+                <label>End Date <input type="date" name="endDate"></label>
+                <label>Rental Option
+                    <select name="subject">
+                        <option value="">Please Select</option>
+                        <option value="metro">Metro Scooter</option>
+                        <option value="dio">Dio Scooter</option>
+                        <option value="PCX150">PCX150 Scooter</option>
+                        <option value="wrangler-4">Wrangler 4-door</option>
+                        <option value="wrangler-2">Wrangler 2-door</option>
+                    </select>
+                </label>
+            </form>
+        </main>
+        <footer>
+            <div>&copy;Scoots | Jacob Williams 2022</div>
+        </footer>
+        <script src="js/toggleMenu.js"></script>
+    </body>
+</html>

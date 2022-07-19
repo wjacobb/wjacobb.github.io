@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="This webpage contains the contents for Jacob Williams, a student at BYU-I, and his assignments for WDD 230">
+        <title>Scoots | Rentals</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/home.css">
+    </head>    
+    <body>
+        <header>
+            <img src="https://cdn0.iconfinder.com/data/icons/competitive-strategy-and-corporate-training/512/985_Culture_global_india_indian_palm_tree_srilanka_tree_pongal_festival-512.png" height="100">
+            <h2>Rental Options</h2>
+        </header>
+        <nav>
+            <ul class="burger responsive">
+                <li><a href="home.html" onclick="toggleMenu()"><h3>&#9776; Menu</h3></a></h3></li>
+                <li><a href="home.html"><h3>Home</h3></a></li>
+                <li id="current-link"><a href="#"><h3>Rentals</h3></a></li>
+                <li><a href="reservations.html"><h3>Reservations</h3></a></li>
+                <li><a href="tours.html"><h3>Tours</h3></a></li>
+                <li><a href="contact.html"><h3>Contact</h3></a></li>
+            </ul>
+        </nav>
+        <main>
+            <table id="rental-info">
+                <tr>
+                    <th style="text-align: center;" colspan="6">Max Persons and Price Chart (includes Tax)</th>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td style="text-align: center;" colspan="2">Reservation</td>
+                    <td style="text-align: center;" colspan="2">Walk-In</td> 
+                </tr>
+                <tr>
+                    <td>Rental Type</td>
+                    <td>Max Persons</td>
+                    <td>Half Day (3 hrs)</td>
+                    <td>Full Day</td>
+                    <td>Half Day (3 hrs)</td>
+                    <td>Full Day</td>
+                </tr>
+                <tr>
+                    <td><p id="name1"></p></td>
+                    <td><p id="capacity1"></p></td>
+                    <td><p id="partreserve1"></p></td>
+                    <td><p id="fullreserve1"></p></td>
+                    <td><p id="partwalk1"></p></td>
+                    <td><p id="fullwalk1"></p></td>
+                </tr>
+                <tr>
+                    <td><p id="name2"></p></td>
+                    <td><p id="capacity2"></p></td>
+                    <td><p id="partreserve2"></p></td>
+                    <td><p id="fullreserve2"></p></td>
+                    <td><p id="partwalk2"></p></td>
+                    <td><p id="fullwalk2"></p></td>
+                </tr>
+                <tr>
+                    <td><p id="name3"></p></td>
+                    <td><p id="capacity3"></p></td>
+                    <td><p id="partreserve3"></p></td>
+                    <td><p id="fullreserve3"></p></td>
+                    <td><p id="partwalk3"></p></td>
+                    <td><p id="fullwalk3"></p></td>
+                </tr>
+                <tr>
+                    <td><p id="name4"></p></td>
+                    <td><p id="capacity4"></p></td>
+                    <td><p id="partreserve4"></p></td>
+                    <td><p id="fullreserve4"></p></td>
+                    <td><p id="partwalk4"></p></td>
+                    <td><p id="fullwalk4"></p></td>
+                </tr>
+                <tr>
+                    <td><p id="name5"></p></td>
+                    <td><p id="capacity5"></p></td>
+                    <td><p id="partreserve5"></p></td>
+                    <td><p id="fullreserve5"></p></td>
+                    <td><p id="partwalk5"></p></td>
+                    <td><p id="fullwalk5"></p></td>
+                </tr>
+                <tr>
+                    <td><p id="name6"></p></td>
+                    <td><p id="capacity6"></p></td>
+                    <td><p id="partreserve6"></p></td>
+                    <td><p id="fullreserve6"></p></td>
+                    <td><p id="partwalk6"></p></td>
+                    <td><p id="fullwalk6"></p></td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <div>&copy;Scoots | Jacob Williams 2022</div>
+        </footer>
+        <script src="js/rentals.js"></script>
+        <script src="js/toggleMenu.js"></script>
+    </body>
+</html>
